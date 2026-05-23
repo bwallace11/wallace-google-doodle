@@ -662,20 +662,21 @@ import Layout from '../layouts/Layout.astro';
 
 <script>
 	const loadGsap = () => {
-		if (window.gsap) {
-			return Promise.resolve(window.gsap);
+		const win = window as Window & { gsap?: any };
+		if (win.gsap) {
+			return Promise.resolve(win.gsap);
 		}
 		return new Promise((resolve, reject) => {
 			const script = document.createElement("script");
 			script.src = "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js";
-			script.onload = () => resolve(window.gsap);
+			script.onload = () => resolve(win.gsap);
 			script.onerror = reject;
 			document.head.appendChild(script);
 		});
 	};
 
-	const runWindowScene = (gsap) => {
-		const allDropIds = [];
+	const runWindowScene = (gsap: any) => {
+		const allDropIds: string[] = [];
 		["L", "C", "R"].forEach((pane) => {
 			const max = pane === "C" ? 31 : 14;
 			for (let i = 0; i <= max; i += 1) {
