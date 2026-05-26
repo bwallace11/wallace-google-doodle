@@ -1,0 +1,251 @@
+body {
+	background: #0b0a0d;
+	color: #ebe6ee;
+}
+
+.scene {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	padding: 24px;
+}
+
+.scene-svg {
+	width: min(96vw, 1200px);
+	height: auto;
+	display: block;
+}
+
+.scene-svg .scene-bg {
+	fill: url(#scene-bg);
+}
+
+.scene-svg .scene-vignette {
+	fill: url(#vignette);
+}
+
+.scene-svg .window-frame {
+	fill: url(#wood-frame);
+	stroke: #2b1b10;
+	stroke-width: 10;
+}
+
+.scene-svg .window-inner {
+	fill: #0f0c0a;
+}
+
+.scene-svg .storm-sky {
+	fill: url(#storm-sky);
+}
+
+.scene-svg .cloud {
+	fill: #14121a;
+	opacity: 0.7;
+}
+
+.scene-svg .rain {
+	fill: url(#rain);
+	opacity: 0.5;
+	filter: url(#rain-blur);
+}
+
+.scene-svg .glass {
+	fill: url(#glass-sheen);
+	opacity: 0.35;
+}
+
+.scene-svg .glass-streak {
+	fill: none;
+	stroke: #b9bed3;
+	stroke-width: 2;
+	opacity: 0.25;
+}
+
+.scene-svg .mullion {
+	fill: #1a1520;
+	opacity: 0.85;
+}
+
+.scene-svg .fog {
+	fill: #d8d6e2;
+	opacity: 0.24;
+	filter: url(#fog-blur);
+}
+
+.scene-svg .fog-text {
+	fill: none;
+	stroke: #ece8f4;
+	stroke-width: 4.2;
+	opacity: 0.95;
+	filter: url(#fog-text-blur);
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.scene-svg .lightning-flash {
+	fill: #e9ecff;
+	opacity: 0;
+}
+
+.scene-svg .ledge-base {
+	fill: #2f1d12;
+}
+
+.scene-svg .ledge-top {
+	fill: url(#wood-trim);
+}
+
+.scene-svg .ledge-front {
+	fill: #24160d;
+}
+
+.scene-svg .bay-top {
+	fill: url(#wood-trim);
+}
+
+.scene-svg .bay-front {
+	fill: #23150c;
+}
+
+.scene-svg .bay-side {
+	fill: #3a2416;
+}
+
+.scene-svg .curtain {
+	fill: #4a2a6b;
+}
+
+.scene-svg .curtain-fold {
+	fill: #5b3380;
+	opacity: 0.8;
+}
+
+.scene-svg .curtain-shadow {
+	fill: #2f1a44;
+	opacity: 0.7;
+}
+
+.scene-svg .curtain-ring {
+	fill: #6b3b9a;
+}
+
+.scene-svg .curtain-tab {
+	fill: #3e235c;
+}
+
+.scene-svg .curtain-rod {
+	fill: #3a2616;
+}
+
+.scene-svg .curtain-rod-highlight {
+	fill: #5a3b22;
+	opacity: 0.7;
+}
+
+.scene-svg .curtain-rod-cap {
+	fill: #27180f;
+}
+
+.scene-svg .curtain-header {
+	fill: #432766;
+}
+
+.scene-svg .rd {
+	stroke: #89b4d8;
+	stroke-width: 1.2;
+	stroke-linecap: round;
+	opacity: 0;
+}
+
+.doll-svg .cls-1 {
+	fill: #3a2941;
+}
+
+.doll-svg .cls-2 {
+	stroke: #0b0a0d;
+}
+
+.doll-svg .cls-2,
+.doll-svg .cls-3,
+.doll-svg .cls-4,
+.doll-svg .cls-5,
+.doll-svg .cls-6,
+.doll-svg .cls-7,
+.doll-svg .cls-8 {
+	fill: none;
+	stroke-miterlimit: 10;
+}
+
+.doll-svg .cls-2,
+.doll-svg .cls-3,
+.doll-svg .cls-4,
+.doll-svg .cls-5,
+.doll-svg .cls-7,
+.doll-svg .cls-8 {
+	stroke-width: 7px;
+}
+
+.doll-svg .cls-3 {
+	stroke: #1f1424;
+}
+
+.doll-svg .cls-4 {
+	stroke: #5b5b63;
+}
+
+.doll-svg .cls-5 {
+	stroke: #4b3953;
+}
+
+.doll-svg .cls-9 {
+	fill: #020202;
+}
+
+.doll-svg .cls-6 {
+	stroke: #2f2335;
+	stroke-width: 13px;
+}
+
+.doll-svg .cls-10 {
+	fill: #bfbff7;
+}
+
+.doll-svg .cls-11 {
+	fill: #5b5b63;
+}
+
+.doll-svg .cls-12 {
+	fill: #0b0a0d;
+}
+
+.doll-svg .cls-13 {
+	fill: #1f1424;
+}
+
+.doll-svg .cls-14 {
+	fill: #ebe6ee;
+}
+
+.doll-svg .cls-15 {
+	fill: #4b3953;
+}
+
+.doll-svg .cls-7 {
+	stroke: #3a2941;
+}
+
+.doll-svg .cls-16 {
+	fill: #111112;
+}
+
+.doll-svg .cls-17 {
+	fill: #281d30;
+}
+
+.doll-svg .cls-18 {
+	fill: #2f2335;
+}
+
+.doll-svg .cls-8 {
+	stroke: #000;
+}
