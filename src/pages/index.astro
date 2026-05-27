@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/scene.css';
 ---
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
 
 <Layout>
 	<main class="scene">
@@ -414,4 +416,11 @@ import '../styles/scene.css';
 		</svg>
 	</main>
 	<script src="../scripts/scene.ts" type="module"></script>
+<script>
+ // use a script tag or an external JS file
+ document.addEventListener("DOMContentLoaded", (event) => {
+  // gsap code here!
+ });
+
+</script>
 </Layout>
